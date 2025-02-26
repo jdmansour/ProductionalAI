@@ -1,0 +1,13 @@
+name: productionai
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - sklearn
+  - simpy
+  - pygad
+  - basyx
+  
