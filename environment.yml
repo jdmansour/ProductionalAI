@@ -2,12 +2,18 @@ name: productionai
 channels:
   - conda-forge
 dependencies:
+  # python 3.13 currently has an issue with lxml
+  - python==3.12
   - numpy
   - pandas
   - matplotlib
   - scipy
-  - sklearn
+  - scikit-learn
   - simpy
   - pygad
-  - basyx
+  # dependencies of basyx-python-sdk
+  - pip
+  - lxml~=4.9.4
+  - pip:
+    - basyx-python-sdk
   
